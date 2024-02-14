@@ -13,18 +13,10 @@ body {
     padding: 15px;
 }
 .header .conte img{
-    object-fit: cover;
-    width: 200px;
+    object-fit: contain;
+    width: 300px;
     height: 85px;
-    box-shadow: 10px 10px 20px 4px #333333;
-    background: rgb(238, 238, 238);
-    -webkit-box-shadow:10px 10px 20px 4px #333333;
-    -moz-box-shadow:10px 10px 20px 4px #333333;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    border: 3px solid rgb(16, 192, 30); 
+   filter: drop-shadow(10px 15px 10px #ffffff); 
 }
 .formulario{
     background: #fff;
@@ -100,9 +92,10 @@ p{
   }
   .header .conte {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
-    background: rgb(17, 17, 17);
+    width: 100%;
+    background: rgba(6, 6, 6, 0.9);
   }
   .logo, .icon-menu {
     margin: 8px;
@@ -137,13 +130,14 @@ p{
       height: 60px; 
   }
   .menu__link {
-      font: 11px verdana;
+    font: 11px verdana;
     display: block;
-    padding: 15px ;
+    padding: 45px 25px;
    background: rgba(51,51,51,0.9);
     text-decoration: none;
     color: #fff; 
-       height: 60px ;
+  height: 100px ;
+  font-size: 20px;
       border-bottom: 5px solid #fff;
   }
   .menu__link:hover {

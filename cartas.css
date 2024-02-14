@@ -1,23 +1,14 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    background: url(fondo/3456rt.jpeg);
+main {
+    
+   background: url(fondo/3456rt.jpeg);
+
 }
 h1{
     text-align: center;
     font-size: 50px;
-    box-shadow: 10px 10px 20px 4px #333333;
-    background: rgb(238, 238, 238);
-    -webkit-box-shadow:10px 10px 20px 4px #333333;
-    -moz-box-shadow:10px 10px 20px 4px #333333;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius:80px ;
-    margin: 50px;
-
+   padding: 50px;
+   color: white;
+ 
 }
 
 h2{
@@ -28,7 +19,7 @@ h2{
 p{
     color: #2c3e50;
 }
-img{
+.cartas-mostar{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -88,9 +79,10 @@ img{
 
 }
 .header .conte img{
-    object-fit: cover;
-    width: 200px;
+    object-fit: contain;
+    width: 300px;
     height: 85px;
+   filter: drop-shadow(10px 15px 10px #ffffff); 
 }
 .adelante, .atras{
     position: absolute;
@@ -183,9 +175,10 @@ margin: 4px;
   
   .header .conte {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
-    background: rgb(17, 17, 17);
+    width: 100%;
+    background: rgba(6, 6, 6, 0.9);
     
 
   }
@@ -225,15 +218,15 @@ margin: 4px;
       
   }
   .menu__link {
-      font: 11px verdana;
+    font: 11px verdana;
     display: block;
-    padding: 15px ;
+    padding: 45px 25px;
    background: rgba(51,51,51,0.9);
     text-decoration: none;
     color: #fff; 
-       height: 60px ;
+  height: 100px ;
+  font-size: 20px;
       border-bottom: 5px solid #fff;
-     
       
   }
   .menu__link:hover {
